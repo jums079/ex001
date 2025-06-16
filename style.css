@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texto{
+    background-color: gray;
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 0;
+    min-height: 0;
+
+    overflow-y: auto;
+}
