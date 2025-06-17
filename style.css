@@ -41,12 +41,16 @@ a {
   text-decoration: none;
   color: white;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
 }
 
 a:hover {
   color: #f77825;
   background-color: rgba(51, 53, 58, 0.295);
   border-radius: 20px;
+  
 }
 
 img {
@@ -69,14 +73,21 @@ main {
   }
 
   nav a {
-    display: block;
-    margin: 10px 0;
-    white-space: nowrap;
-    width: 100%;
+    display: block;              /* Usa toda a largura disponível */
+    width: 100%;                 /* Ocupa toda a largura do pai */
+    padding: 10px 20px;          /* Espaçamento interno */
+    border-radius: 20px;         /* Bordas arredondadas */
+    box-sizing: border-box;      /* Inclui padding na largura total */
+    word-break: break-word;      /* Se tiver uma palavra grande, quebra corretamente */
+    text-align: left;            /* Alinha o texto à esquerda (ou troque por center) */
   }
+  
 
   nav img {
     width: 60px;
     margin-left: 0; /* Remover margem no mobile */
+  }
+  li{
+    gap: 10px;
   }
 }
