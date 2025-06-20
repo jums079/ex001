@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container{
+  display: grid;
+  background-color: brown;
+  gap: 20px;
+  height: 100vh;
+ align-items: center;
+ justify-content: center;
+ align-content: center;
+ grid-template-columns: 200px 200px 200px;
+}
+
+.item{
+  background-color: lightgray;
+  width: 200px;
+  height: 200px;
+}
